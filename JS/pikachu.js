@@ -3,6 +3,8 @@ function pikachu() {
 }
 
 function iniciarPikachu() {
+  const respostas = document.querySelector("#respostas");
+  respostas.innerHTML = "";
   let pergunta1 = {
     pergunta: "Seus amigos te chamaram para sair, para onde você iria? \n Paradoja \n VU Bar",
     opcoes: ["paradoja", "vu bar"],
