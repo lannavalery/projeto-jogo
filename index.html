@@ -21,25 +21,59 @@
         border="0"
       >
     </header>
-    <div class="texto">
-      <h1> Escolha um personagem </h1>
+    <div class="selecao-de-personagem">
+      <div class="texto">
+        <h1> Escolha um personagem </h1>
+      </div>
+      <div class="container">
+        <div class="personagem">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">
+          Jigglypuff
+        </div>
+        <div class="personagem">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png">
+          Snorlax
+        </div>
+        <div class="personagem">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+          Pikachu
+        </div>
+      </div>
+      <button type="button" class="button" onclick="escolherPersonagem()">
+        Escolher
+      </button>
     </div>
-    <div class="container">
-      <div class="personagem">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">
-        Jigglypuff
-      </div>
-      <div class="personagem">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png">
-        Snorlax
-      </div>
-      <div class="personagem">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
-        Pikachu
-      </div>
+
+
+    <div class="bio jigglypuff">
+      jigglypuff 
     </div>
-    <button type="button" class="button">
-      Escolher
+    <div class="bio snorlax">
+      snorlax 
+    </div>
+    <div class="bio pikachu">
+      <div> 
+        Pikachu que pode gerar eletricidade poderosa tem bolsas nas bochechas que são extra macias e super elásticas.
+      </div>
+      <button type="button" class="button" onclick="iniciarPikachu()">
+        Começar 
+      </button>
+    </div>
+    <ol class="respostas" id="respostas"></ol>
+
+    <button
+      type="button"
+      class="button hide"
+      id="voltar"
+      onclick="window.location.reload()"
+    >
+      Voltar ao início 
     </button>
+
+
+    <script src="./JS/jogo.js"></script>
+    <script src="./JS/jigglypuff.js"></script>
+    <script src="./JS/snorlax.js"></script>
+    <script src="./JS/pikachu.js"></script>
   </body>
 </html>

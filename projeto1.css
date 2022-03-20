@@ -69,3 +69,15 @@ h1 {
 .button:hover {
     background-color: var(--color-blue-dark);
 }
+.bio {
+    display: none;
+}
+
+
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}

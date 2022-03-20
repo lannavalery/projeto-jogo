@@ -1,0 +1,3 @@
+function snorlax() {
+    exibirBio('snorlax')
+}
