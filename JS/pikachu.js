@@ -34,9 +34,10 @@ function iniciarPikachu() {
       respondeu: false
     };
     const resposta2 = perguntar(pergunta2);
-      
     if (resposta2 === "ir dançar") {
       gameOver("Game over! Você eletrocutou todos, parece que o role deu ruim...");
-    } 
+    } else if (resposta2 === "ir para outro role") {
+      iniciarPikachu ()
+    }
   }
 }
