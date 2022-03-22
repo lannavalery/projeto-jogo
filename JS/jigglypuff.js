@@ -31,7 +31,10 @@ function iniciarJigglypuff() {
         respondeu: false
       };
       const resposta3 = perguntar(pergunta3);
-      gameOver("Game over! Você fez todos os seus amigos dormirem :(")
+      if (resposta3 === pergunta3.opcoes[0]) {
+      gameOver("Game over! Você fez todos os seus amigos dormirem :(");
+    } else if (resposta3 === pergunta3.opcoes[1]) {
+     iniciarJigglypuff() 
     }
   } else if (resposta1 === pergunta1.opcoes[1]) {
     let pergunta2 = {
@@ -58,4 +61,5 @@ function iniciarJigglypuff() {
       }
     }
   }
+}
 }
