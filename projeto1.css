@@ -70,11 +70,21 @@ h1 {
     background-color: var(--color-blue-dark);
 }
 .bio {
+    color: var(--color-light);
+    background-color: var(--color-red);
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    flex-wrap:wrap;
+    justify-content: center;
     display: none;
+    margin: 13.4px 450px;
 }
-
-
-
+.bio > img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 16px;
+}
 .hide {
     display: none;
 }
