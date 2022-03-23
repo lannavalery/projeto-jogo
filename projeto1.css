@@ -4,6 +4,7 @@
     --color-blue-dark: #274e88;
     --color-dark: #222224;
     --color-light: #f0f0f0;
+    --color-gray: #a8a7a7;
 }
 body {
     font-family: 'Press Start 2P';
@@ -84,6 +85,17 @@ h1 {
     border-radius: 50%;
     width: 150px;
     margin-bottom: 16px;
+}
+.respostas {
+    color: var(--color-gray);
+    max-width: 42.1%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 30% 0;
+    text-align: left;
+}
+.respostas b {
+    color: var(--color-light);
 }
 .hide {
     display: none;
