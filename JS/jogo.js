@@ -6,14 +6,14 @@ function perguntar(questao) {
       alert(`A resposta "${questao.resposta}" está inválida`)
     }
   // questao.resposta recebe a resposta da questao.pergunta  
-    questao.resposta = prompt(questao.pergunta)
+    questao.resposta = prompt(questao.pergunta)?.toLowerCase()
   // se a resposta não estiver vazia  
     if (questao.resposta.length) {
       questao.respondeu = true;
       const respostas = document.querySelector("#respostas");
       respostas.innerHTML += `
         <li>
-          <b>${questao.pergunta}</b><br/>
+          <b>${questao.pergunta.replace(/\n/g, "<br />- ")}</b><br/>
           ${questao.resposta}
         </li>
       `;
