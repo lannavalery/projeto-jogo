@@ -103,3 +103,15 @@ h1 {
 .show {
     display: block;
 }
+@media (max-width: 750px) {
+    .texto {
+        max-width: 200px;
+        margin-left: 90px;
+    }
+    .bio {
+        margin: 0;
+    }
+    .container {
+        display: block;
+    }
+}
