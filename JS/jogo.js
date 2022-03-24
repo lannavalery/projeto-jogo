@@ -20,7 +20,7 @@ function perguntar(questao) {
     }
   }
   if (questao.resposta?.toLowerCase() === "ir para casa") {
-    gameOver("Game Over! O role acabou");
+    gameOver("Game Over! O role acabou.😞");
   }
   return questao.resposta
 }
